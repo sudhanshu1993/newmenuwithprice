@@ -1,0 +1,20 @@
+{
+    "name": "Menu with Price",
+    "short_name": "MenuPrice",
+    "start_url": "/?utm_source=home&utm_medium=pwa",
+    "background_color": "#fff",
+    "display": "standalone",
+    "description": "Menu with Price provides users with detailed menus and prices for restaurants across the United States.",
+    "icons": [
+        {
+        "src": "/home-icon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+        },
+        {
+            "src": "/home-icon-144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        }
+    ]
+}
