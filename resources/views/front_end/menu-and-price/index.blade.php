@@ -77,7 +77,7 @@
 </div>
     
   
-<div class="content container" style="width:70%" >
+<div class="content" style="width:70%" >
     <div class="main">
         <div class="bread-crumbs" itemscope="">
             <span itemprop="itemListElement" itemscope="" >
@@ -95,10 +95,10 @@
 <a href="{{url('menu-and-price')}}" class="active"  style="background-color:blue;">Popular Brands</a>
 <a href="{{url('menu-and-price/a')}}"  style="background-color:blue;">A</a><a href="{{url('menu-and-price/b')}} "  style="background-color:blue;">B</a><a href="{{url('menu-and-price/c')}}"  style="background-color:blue;">C</a><a href="{{url('menu-and-price/d')}}"  style="background-color:blue;">D</a><a href="{{url('menu-and-price/e')}}"  style="background-color:blue;">E</a><a href="{{url('menu-and-price/f')}}"  style="background-color:blue;">F</a><a href="{{url('menu-and-price/g')}}"  style="background-color:blue;">G</a><a href="{{url('menu-and-price/h')}}"  style="background-color:blue;">H</a><a href="{{url('menu-and-price/i')}}"  style="background-color:blue;">I</a><a href="{{url('menu-and-price/j')}}"  style="background-color:blue;">J</a><a href="{{url('menu-and-price/k')}} "  style="background-color:blue;">K</a><a href="{{url('menu-and-price/l')}}"  style="background-color:blue;">L</a><a href="{{url('menu-and-price/m')}}"  style="background-color:blue;">M</a><a href="{{url('menu-and-price/n')}}"  style="background-color:blue;">N</a><a href="{{url('menu-and-price/o')}} "  style="background-color:blue;">O</a><a href="{{url('menu-and-price/p')}}"  style="background-color:blue;">P</a><a href="{{url('menu-and-price/q')}}"  style="background-color:blue;">Q</a><a href="{{url('menu-and-price/r')}}"  style="background-color:blue;">R</a><a href="{{url('menu-and-price/s')}}"  style="background-color:blue;">S</a><a href="{{url('menu-and-price/t')}} "  style="background-color:blue;">T</a><a href="{{url('menu-and-price/u')}}"  style="background-color:blue;">U</a><a href="{{url('menu-and-price/v')}}"  style="background-color:blue;">V</a><a href="{{url('menu-and-price/w')}}"  style="background-color:blue;">W</a><a href="{{url('menu-and-price/y')}} "  style="background-color:blue;">Y</a><a href="{{url('menu-and-price/z')}}"  style="background-color:blue;">Z</a><a href="{{url('menu-and-price/1')}}"  style="background-color:blue;">#</a> </div>
 
-<ul class="menu-list category-menu container" >
+<ul class="menu-list category-menu " >
 	@foreach($data as $key => $value)
 	<li><a href="{{
-		Str::after($key,'https://www.menuwithprice.com') }}" style="border:1px solid blue;text-align: center;font-size:18px;font-family:Arial, Helvetica, sans-serif;">{{ $value }}</a></li>
+		Str::after($key,'https://www.menuwithprice.com') }}" style="text-align: center;font-size:18px;font-family:Arial, Helvetica, sans-serif;">{{ $value }}</a></li>
 	@endforeach
     </ul>
     <div class="pageGo">

@@ -453,6 +453,7 @@ h1 span {
     line-height: 26px;
     font-family: rubik;
     font-weight: 700;
+    margin-top: 4%;
 }
 
 h2,
@@ -512,10 +513,11 @@ input {
     margin: 0 auto;
     margin-top: 10px;
     width: 100%;
+    margin-left: 200px;
     padding: 0 20px 15px;
     box-sizing: border-box;
     overflow: hidden;
-    min-height: 300px;
+    min-height: 100px;
     box-shadow: 0 0 1px rgba(220, 220, 220, .5)
 }
 
@@ -523,6 +525,37 @@ input {
     display: inline-block;
     width: 100%;
     font-size: 0
+}
+
+.main2 {
+    display: inline-block;
+    width: 100%;
+    font-size: 0;
+    min-height: 250px;
+}
+
+.main1 {
+    display: inline-block;
+    width: 100%;
+    min-height: 500px;
+    ;
+    font-size: 0
+}
+
+@media screen and (max-width: 1024px) {
+    .main1 {
+        display: inline-block;
+        width: 100%;
+        min-height: 1150px;
+        ;
+        font-size: 0
+    }
+    .main2 {
+        display: inline-block;
+        width: 100%;
+        font-size: 0;
+        min-height: 580px;
+    }
 }
 
 .bread-crumbs {
@@ -1255,7 +1288,7 @@ input {
     display: inline-block;
     position: relative;
     z-index: 1;
-    color: #df3940;
+    color: blue;
     background: #fff;
     padding: 0 15px
 }
@@ -1649,14 +1682,13 @@ input {
 .menu-list {
     margin-bottom: 12px;
     margin-right: -1%;
-    margin-left: -1%
+    margin-top: 25px;
 }
 
 .menu-list li {
     display: inline-block;
     width: 31.3%;
     margin: 0 1%;
-    border-bottom: 1px solid #fee7e7;
     font-size: 0
 }
 
@@ -1671,17 +1703,19 @@ input {
     width: 100%;
     line-height: 30px;
     white-space: nowrap;
-    overflow: hidden;
     text-overflow: ellipsis;
-    box-shadow: 1px 2px #251ea9;
     padding: 5px;
     margin-left: 0px;
+    text-align: justify;
     margin-bottom: 10px;
-    border-radius: 10px;
+    border-radius: 45px;
+    box-shadow: 2px 2px rgb(0 0 0 / 20%);
 }
 
 .menu-list a:hover {
-    color: #ff7070
+    color: #fff;
+    background-color: #df3940;
+    border-color: #df3940;
 }
 
 .menu-list li:nth-child(-n+3) {
@@ -1771,6 +1805,7 @@ input {
 }
 
 .brand-info p {
+    text-align: justify;
     line-height: 24px;
     font-size: 16px
 }
@@ -1805,76 +1840,7 @@ input {
 }
 
 .prices-menu {
-    margin: 10px 0
-}
-
-@media screen and (max-width: 360px) {
-    .brand {
-        margin-left: 60px !important;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .prices-menu {
-        margin-left: 145px !important;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .prices-menu {
-        margin-left: 115px !important;
-    }
-    .brand {
-        margin-left: 100px !important;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .prices-menu {
-        margin-left: 115px !important;
-    }
-    .brand {
-        margin-left: 100px !important;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .prices-menu {
-        margin-left: 95px !important;
-    }
-}
-
-@media screen and (max-width: 414px) {
-    .prices-menu {
-        margin-left: 70px !important;
-    }
-}
-
-@media screen and (max-width: 411px) {
-    .prices-menu {
-        margin-left: 70px !important;
-    }
-    .brand {
-        margin-left: 60px !important;
-    }
-}
-
-@media screen and (max-width: 360px) {
-    .prices-menu {
-        margin-left: 60px !important;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .prices-menu {
-        margin-left: 50px !important;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .prices-menu {
-        margin-left: 55px !important;
-    }
+    margin: 10px 0;
 }
 
 .tab-main input[type=radio] {
@@ -1886,6 +1852,7 @@ input {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-top: 5%;
     border-bottom: 2px solid #df3940
 }
 
@@ -1941,7 +1908,6 @@ input {
 
 .prc-table tr,
 .prc-table td {
-    padding-left: 8px !important;
     display: inline-block
 }
 
@@ -1956,13 +1922,13 @@ input {
 
 .prc-table .prc-th {
     margin-top: 5%;
-    padding-left: 8px;
     font-size: 16px;
     line-height: 18px;
     padding-top: 20px;
     padding-bottom: 4px;
     width: 100%!important;
     border-top: none;
+    background-color: lightblue;
 }
 
 .prc-table .prc-th+tr,
@@ -2065,8 +2031,7 @@ input {
 }
 
 .md-price table {
-    width: 105%;
-    margin-left: -25px;
+    width: 102%;
 }
 
 #menu:checked~.brand #dt-menu label,
@@ -2117,6 +2082,9 @@ input {
 }
 
 @media screen and (max-width: 360px) {
+    .menu-list a {
+        font-size: 12px !important;
+    }
     .choose label {
         position: absolute;
         right: 0;
@@ -2153,6 +2121,9 @@ input {
 }
 
 @media screen and (max-width: 414px) {
+    .menu-list a {
+        font-size: 12px !important;
+    }
     .choose label {
         position: absolute;
         right: 0;
@@ -2171,6 +2142,9 @@ input {
 }
 
 @media screen and (max-width: 540px) {
+    .menu-list a {
+        font-size: 12px !important;
+    }
     .choose label {
         position: absolute;
         right: 0;
@@ -2189,6 +2163,10 @@ input {
 }
 
 @media screen and (max-width: 411px) {
+    .menu-list a {
+        text-align: center !important;
+        font-size: 12px !important;
+    }
     .choose label {
         position: absolute;
         right: 0;
@@ -2203,6 +2181,12 @@ input {
         width: 70px;
         margin-top: 35px;
         text-align: center
+    }
+    .main2 {
+        display: inline-block;
+        width: 100%;
+        font-size: 0;
+        min-height: 320px;
     }
 }
 
@@ -2254,11 +2238,15 @@ input {
     display: inline-flex;
     line-height: 20px;
     color: #555;
-    border-radius: 2px;
+    width: 220px;
+    padding-top: 1%;
+    height: 100%;
+    border-radius: 45px;
+    box-shadow: 2px 2px rgb(0 0 0 / 20%);
     cursor: pointer;
-    border-bottom: 2px solid #f6be9e;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     justify-content: center;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 .choose-list a:hover,
@@ -2270,15 +2258,16 @@ input {
 
 .choose-state,
 .state-list {
-    margin-left: -1%;
     margin-right: -1%
 }
 
 .choose-state a {
     width: 8%;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
     line-height: 26px;
-    margin: 13px 1% 0
+    margin: 8px 1% 0
 }
 
 .choose input[type=checkbox]:checked~div.choose-list {
@@ -2340,6 +2329,7 @@ input {
 .stores-list tr {
     display: block;
     width: 100%;
+    margin-top: 5%;
     font-size: 0
 }
 
@@ -2749,8 +2739,7 @@ input {
 
 .food-detail-peice {
     margin-top: 15px;
-    width: 105%;
-    margin-left: -14px;
+    width: 100%;
 }
 
 .food-detail-peice h2 {
@@ -2944,7 +2933,7 @@ input[type=radio]:checked~.default-table,
 .nutri-agen table {
     margin-top: 10%;
     border-collapse: collapse;
-    margin-bottom: 10px
+    margin-bottom: 10px;
 }
 
 .nutri-agen tr {
@@ -2952,6 +2941,7 @@ input[type=radio]:checked~.default-table,
 }
 
 .nutri-agen tr:nth-child(1) {
+    background-color: lightblue;
     height: auto
 }
 
@@ -2990,7 +2980,6 @@ input[type=radio]:checked~.default-table,
 
 .nutri-agen td:first-child {
     text-align: left;
-    padding-left: 6px
 }
 
 .nutri-agen td:not(:first-child) {
@@ -2999,16 +2988,14 @@ input[type=radio]:checked~.default-table,
 
 .nutri-agen th:first-child {
     text-align: left;
-    padding-left: 6px
 }
 
 .nutri-agen table p {
-    font-size: 16px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    font-family: 'roboto', 'sans-serif', 'Arial';
     display: inline-block;
-    width: 100%;
-    line-height: 21px;
-    color: blue;
+    width: 70%;
+    line-height: 20px;
 }
 
 .nutri-agen table span {
@@ -4393,10 +4380,6 @@ svg.icon_new {
     text-decoration: underline
 }
 
-.contenttest {
-    margin-left: 200px;
-}
-
 @media screen and (max-width:1013px) {
     .content,
     .hd-bar,
@@ -4625,9 +4608,15 @@ svg.icon_new {
 
 @media screen and (max-width:768px) {
     .content {
-        margin: 90px;
+        margin-left: 70px;
         padding: 0 15px 15px;
         overflow: hidden
+    }
+    .main2 {
+        display: inline-block;
+        width: 100%;
+        font-size: 0;
+        min-height: 500px;
     }
     .main {
         padding: 0
@@ -4710,7 +4699,7 @@ svg.icon_new {
     }
     .brand-logo {
         margin-top: 0;
-        width: 160px;
+        margin width: 160px;
         height: 130px
     }
     .brdt-list:before {
@@ -5202,7 +5191,6 @@ svg.icon_new {
         display: none
     }
     .content {
-        margin-left: 70px;
         padding: 0 10px 10px
     }
     .r_alse_viewed {
@@ -5847,6 +5835,69 @@ svg.icon_new {
     }
 }
 
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cards_item {
+    padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+    .cards_item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 56rem) {
+    .cards_item {
+        width: 16%;
+    }
+}
+
+.card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card_content {
+    padding: 1rem;
+    background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+}
+
+.card_title {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card_text {
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+}
+
 @media screen and (max-width:360px) {
     .category a {
         padding: 2px 3px
@@ -5865,6 +5916,9 @@ svg.icon_new {
 }
 
 @media screen and (max-width:320px) {
+    .menu-list a {
+        font-size: 10px !important;
+    }
     .mp-logo li:nth-child(n) {
         height: 67px
     }

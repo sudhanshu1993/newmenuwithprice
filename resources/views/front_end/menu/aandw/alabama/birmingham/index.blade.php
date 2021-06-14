@@ -78,8 +78,8 @@
     
 
     
-<div class="content container" style="width:70%">
-    <div class="main">
+<div class="content" style="width:70%">
+    <div class="main main1">
     
     <div class="bread-crumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
     @foreach ($city as $key => $value)
@@ -131,7 +131,7 @@ Menu Prices and Location Near me in</span>
     </div>
     
     
-    <div class="brand brand-center">
+    <!-- <div class="brand brand-center">
     <h2 style="color:blue;">Find @foreach($city as $key => $value)
     @if($loop->iteration=='3')
 	{{  Str::remove('Prices', $value)}}
@@ -150,7 +150,7 @@ Menu Prices and Location Near me in</span>
 	{{$value}}
     @endforeach
     </p>
-    
+    </div> -->
     <div class="ads ads-bottom"><div>
     <style type="text/css">
     .mwp_ads_3 { width: 100%; height: 250px; }

@@ -77,7 +77,7 @@
 </div>
     
 
-<div class="content container" style="width:70%"> 
+<div class="content" style="width:70%"> 
     <div class="main">
     
     <div class="bread-crumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
@@ -122,7 +122,7 @@
 	<?php $s= Str::remove('Prices', $value) ?>
     @endif
 	@endforeach
-    <?php  $text= '<h2>'.$s.'Hours | '.$s.'Opening & Closing Hours.</h2>';
+    <?php  $text= '<h1>'.$s.'Hours | '.$s.'Opening & Closing Hours.</h1>';
     
  
     ?>

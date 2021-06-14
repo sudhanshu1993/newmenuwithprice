@@ -77,7 +77,7 @@
 </div>
 
     
-<div class="content container" style="width:65%" >
+<div class="content" style="width:70%" >
     <div class="main">
     
     <div class="bread-crumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
@@ -95,7 +95,7 @@
     <ul class="menu-list category-menu">
 	@foreach($data as $key => $value)
 	<li><a href="{{
-		Str::after($key,'https://www.menuwithprice.com') }}" style="border:1px solid blue;text-align: center;font-size:18px;font-family:Arial, Helvetica, sans-serif;">{{ $value }}</a></li>
+		Str::after($key,'https://www.menuwithprice.com') }}" style="text-align: center;font-size:18px;font-family:Arial, Helvetica, sans-serif;">{{ $value }}</a></li>
 	@endforeach
 </ul>
     

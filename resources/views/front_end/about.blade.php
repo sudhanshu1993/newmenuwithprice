@@ -78,7 +78,7 @@
 
 
      
-<div class="content container"  style="width:70%">
+<div class="content "  style="width:70%">
     <div class="main">
         <div class="bread-crumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
             <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">

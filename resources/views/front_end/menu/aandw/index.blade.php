@@ -76,92 +76,73 @@
         </div>
     </div>
 </div>
-    
-
-<div class="content container" style="width:70%;">
-    <div class="main tab-main">
-    
-    <div class="bread-crumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
-    @foreach ($city as $key => $value)
+<div class="content" style="width:70%;">
+    <div class="main  tab-main">
+        <div class="bread-crumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+            @foreach ($city as $key => $value)
                 <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                <a itemprop="item" href="{{
-                    Str::after($key,'https://www.menuwithprice.com') }}"><i itemprop="name">{{$value}}</i></a>
-                <meta itemprop="position" content="{{$loop->iteration}}">
-            </span>
-           
-                @endforeach
-    </div>
-    
+                    <a itemprop="item" href="{{
+                        Str::after($key,'https://www.menuwithprice.com') }}"><i itemprop="name">{{$value}}</i></a>
+                    <meta itemprop="position" content="{{$loop->iteration}}">
+                </span>
+            @endforeach
+        </div>
     <div>
-    <h1 style="color:blue;"><span style="color:blue;">@foreach($city as $key => $value)
-    @if($loop->last)
-<?php echo rtrim($value,'Prices') ?>
-	
-    @endif
-	@endforeach </span>  Prices and Locations Near Me</h1>
+    <h1 style="color:blue;">
+        <span style="color:blue;">
+            @foreach($city as $key => $value)
+                @if($loop->last)
+                    <?php echo rtrim($value,'Prices') ?>
+	            @endif
+	        @endforeach 
+        </span>  
+        Prices and Locations Near Me
+    </h1>
     </div>
+    <div class="brand" >
+        <a class="brand-logo" href="#">
+            <img src="{{ asset('https://cdn.menuwithprice.com/Images/brand_logo/' . $id . '.png') }}"
+                        alt="{{$id}}">
+        </a>
     </div>
+    <div class="choose" >
+        <h2 style="color:blue;">
+            Select Your State for
+                @foreach($city as $key => $value)
+                    @if($loop->last)
+                        <?php echo rtrim($value,'Menu') ?>
+	                @endif
+	            @endforeach
+        </h2>
+        <input type="checkbox">
+            <label class="label" style="background-color:blue;">
+                <span class="more" >More</span>
+                    <span class="less" >Less</span>
+                        <span class="more-less"></span>
+            </label>
+            <div class="choose-list choose-state">
+                @foreach($data as $key => $value)
+                    <a href="{{Str::after($key,'https://www.menuwithprice.com') }}">{{ $value }}</a>
+	            @endforeach
+            </div>
     </div>
-    
-    <div class="brand container" style="width:70%;margin-left:200px;">
-    <a class="brand-logo" href="#"><img
-                        src="{{ asset('https://cdn.menuwithprice.com/Images/brand_logo/' . $id . '.png') }}"
-                        alt="{{$id}}"></a>
+    <div class="prices-menu main3" >
+        <div class="menu-tab">
+            <div class="menu-tab-l">
+                <h2 style="color:blue;"> @foreach($city as $key => $value)
+                    @if($loop->last)
+                        <?php echo rtrim($value,'Prices') ?>
+	                @endif
+	                @endforeach  with Prices</h2>
+            </div>
+        </div>
     </div>
-    
-    <div class="choose container" style="width:70%">
-    <h2 style="color:blue;">Select Your State for
-    @foreach($city as $key => $value)
-    @if($loop->last)
-<?php echo rtrim($value,'Menu') ?>
-	
-    @endif
-	@endforeach
-    
-    </h2>
-    <input type="checkbox">
-    <label class="label" style="background-color:blue;">
-    <span class="more" >More</span>
-    <span class="less" >Less</span>
-    <span class="more-less"></span>
-    </label>
-    <div class="choose-list choose-state">
-    @foreach($data as $key => $value)
-    
-	<a href="{{
-		Str::after($key,'https://www.menuwithprice.com') }}">
-        {{ $value }}</a>
-	@endforeach
-      </div>
-    </div>
-    
-    
-    <div class="prices-menu container" style="width:70%;;margin-left:190px;">
-    <div class="menu-tab">
-    <div class="menu-tab-l">
-    <h2 style="color:blue;"> @foreach($city as $key => $value)
-    @if($loop->last)
-<?php echo rtrim($value,'Prices') ?>
-	
-    @endif
-	@endforeach  with Prices</h2>
-    </div>
-    </div>
-    <div class="price md-price" >
-    <table class="prc-table" >
-
-    @foreach ($datam as $key => $value)
+        <div class="price md-price" >
+            <table class="prc-table" >
+                @foreach ($datam as $key => $value)
                                 {!! str_replace('https://www.menuwithprice.com', ' ', $value) !!}
                             @endforeach
-
-    
-    </table> 
+            </table> 
+        </div>
     </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    
-    
-    
-    </div>
+                    </div>

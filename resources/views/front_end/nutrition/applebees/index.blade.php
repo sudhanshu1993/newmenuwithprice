@@ -98,33 +98,10 @@
             @endif
               
             @endforeach
-            <div class="star_div">
-                <div class="rating">
-                    <form method="POST">
-                        <input type="submit" id="starScore1" name="score" value="1" class="score"><label for="starScore1"
-                            class="star star1"></label>
-                        <input type="submit" id="starScore2" name="score" value="2" class="score"><label for="starScore2"
-                            class="star star2"></label>
-                        <input type="submit" id="starScore3" name="score" value="3" class="score"><label for="starScore3"
-                            class="star star3"></label>
-                        <input type="submit" id="starScore4" name="score" value="4" class="score"><label for="starScore4"
-                            class="star star4"></label>
-                        <input type="submit" id="starScore5" name="score" value="5" class="score"><label for="starScore5"
-                            class="star star5"></label>
-                    </form>
-                </div>
-                <div class="score_star">
-                    <span style="width:52%"></span>
-                </div>
-                <span class="score_span">
-                    <span>2.6</span> based on
-                    <span>1,466</span> votes
-                </span>
-            </div>
-
             
-            <div class="brand">
-                <a class="brand-logo" href="#"><img
+            
+            <div class="brand ">
+                <a class="brand-logo brandtest" href="#"><img
                         src="{{ asset('https://cdn.menuwithprice.com/Images/brand_logo/' . $id . '.png') }}"
                         alt="{{$id}}"></a>
                </div>
@@ -148,23 +125,22 @@
                             href="{{ Str::after($keys, 'https://www.menuwithprice.com') }}">{{ $values }}</a>
                     @endforeach
                 </div>
-                        </div>
-            
+                </div>
 
             
-
+                    &nbsp;
                 <div class="nutri-agen food-detail-peice">
                     <h2 style="color:blue;">
                         @foreach ($b as $key => $value)
 
                         @if($loop->last)
-                        <h1 style="color:blue;">{{ $value }} Calories Facts</h1>
+                        <h2 style="color:blue;">{{ $value }} Calories Facts
                         @endif
                           
                         @endforeach
                     </h2>
 
-                    <table >
+                    <table>
                         <tbody>
                             {{-- <tr>
                                 <th>Food</th>

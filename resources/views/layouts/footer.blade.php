@@ -1,6 +1,6 @@
 <div class="footer">
 <div class="ft-inner" style="letter-spacing: 5px;text-align: center;">
-<h2>General Information</h2>
+<h2 style="color:lightblue;">General Information</h2>
 <a href="/about">About Us |</a>
 <a href="/contact">Contact Us |</a>
 <a href="/privacy">Privacy Policy |</a>

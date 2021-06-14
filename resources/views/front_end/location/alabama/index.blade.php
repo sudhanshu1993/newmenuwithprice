@@ -79,58 +79,50 @@
 </div>
 
 
-<div class="content container contenttest"  >
+<div class="content " style="width:70%" >
     <div class="main ">
-    
-    <div class="bread-crumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
-    @foreach ($city as $key => $value)
+        <div class="bread-crumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+            @foreach ($city as $key => $value)
                 <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                <a itemprop="item" href="{{
-                    Str::after($key,'https://www.menuwithprice.com') }}"><i itemprop="name">Menu With Price</i></a>
+                    <a itemprop="item" href="{{
+                        Str::after($key,'https://www.menuwithprice.com') }}"><i itemprop="name">Menu With Price</i>
+                    </a>
                     <meta itemprop="position" content="{{$loop->iteration}}">
                 </span>
                 <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-    <a href="{{
-                    Str::after($key,'https://www.menuwithprice.com') }}" itemprop="item"><i itemprop="name">Locator</i></a>
-    <meta itemprop="position" content="{{$loop->iteration}}">
-    </span>
+                    <a href="{{
+                        Str::after($key,'https://www.menuwithprice.com') }}" itemprop="item"><i itemprop="name">Locator</i>
+                    </a>
+                    <meta itemprop="position" content="{{$loop->iteration}}">
+                </span>
                 <a itemprop="item" href="{{
-                    Str::after($key,'https://www.menuwithprice.com') }}"><i itemprop="name">{{$value}}</i></a>
+                    Str::after($key,'https://www.menuwithprice.com') }}"><i itemprop="name">{{$value}}</i>
+                </a>
                 <meta itemprop="position" content="{{$loop->iteration}}">
-            </span>
-           
-                @endforeach
-    
-     
-
-   </div>
-   </div> 
-    <h1  style="color:blue;">Best Restaurants in
-    @foreach($city as $key => $value)
-	{{$value}}
-	@endforeach
-    
-    
-    </h1>
-    
-    <div class="category " style="width:70%;"  >
-    @foreach ($cat as $key => $value)
-                                {!! str_replace('https://www.menuwithprice.com', ' ', $value) !!}
-                            @endforeach
-
+            @endforeach
+        </div>
+    <div> 
+        <h1 style="color:blue;">
+            Best Restaurants in
+                @foreach($city as $key => $value)
+	                {{$value}}
+	            @endforeach
+        </h1>
     </div>
-    
-    
-    <ul class="menu-list category-menu container" style="width:70%">
-	@foreach($data as $key => $value)
-	<li><a href="{{
-		Str::after($key,'https://www.menuwithprice.com') }}" style="border:1px solid blue;text-align: center;font-size:18px;font-family:Arial, Helvetica, sans-serif;">{{ $value }}</a></li>
-	@endforeach
+    <div class="category" >
+        @foreach ($cat as $key => $value)
+            {!! str_replace('https://www.menuwithprice.com', ' ', $value) !!}
+        @endforeach
+    </div>
+    <ul class="menu-list category-menu main2" >
+	    @foreach($data as $key => $value)
+	        <li>
+                <a href="{{
+		            Str::after($key,'https://www.menuwithprice.com') }}" style="text-align: center;font-size:18px;font-family:Arial, Helvetica, sans-serif;">{{ $value }}
+                </a>
+            </li>
+	    @endforeach
     </ul>
-    
-    </div>
-    </div>
-    
-    
-    </div>
-    </div>
+
+</div>
+</div>

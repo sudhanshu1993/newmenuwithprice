@@ -13,7 +13,6 @@
 <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72×72-precomposed.png">
 <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114×114-precomposed.png">
 <link rel="preload" href="{{ asset('user/front_end/css/style.css?v-0203')}}" as="style">
-<!-- CSS only -->
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="{{ asset('user/front_end/css/style.css?v-0203')}}" />
@@ -113,7 +112,7 @@
     </div>
 
     <div class="menu-price container" id="menu-price" style="width:70%">
-        <h2><span>Menu Price</span></h2>
+        <h2 ><span>Menu Price</span></h2>
         <ul class="mp-logo">
             <li><a href=" menu/chick-fil-a/"><img src=" {{ asset('user/front_end/images/brandlogo/chick-fil-a.png')}}" alt="Chick-fil-A menu"></a></li>
             <li><a href=" menu/steak-n-shake/"><img src=" {{ asset('user/front_end/images/brandlogo/steak-n-shake.png')}}" alt="Steak 'n Shake menu"></a></li>
@@ -148,8 +147,79 @@
         </ul>
     </div>
 </div>
-<div class="menu-price food-cl-list">
-    <ul class="h-hours">
+<div class="container" style="width:70%">
+  <ul class="cards " >
+    <li class="cards_item">
+      <div class="card">
+      <a href="/donuts-near-me">
+        <div class="card_image"><img src="{{ asset('user/front_end/images/food_near_me/donuts-near-me.png')}}"></div>
+        <div class="card_content">
+          <h2 class="card_title">Donuts Near Me</h2>
+          
+        </div>
+        </a>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+      <a href="/brunch-near-me">        
+        <div class="card_image"><img src="{{ asset('user/front_end/images/food_near_me/brunch-near-me.png')}}"></div>
+        <div class="card_content">
+          <h2 class="card_title">Brunch Near Me</h2>
+        </div>
+        </a>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <a href="/burgers-near-me">
+        <div class="card_image"><img src="{{ asset('user/front_end/images/food_near_me/burgers-near-me.png')}}"></div>
+        <div class="card_content">
+          <h2 class="card_title">Burger Near Me</h2>
+        </div>
+        </a>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+      <a href="/pizza-near-me">
+            
+        <div class="card_image"><img src="{{ asset('user/front_end/images/food_near_me/pizza-near-me.png')}}"></div>
+        <div class="card_content">
+          <h2 class="card_title">Pizza Near Me</h2>
+        </div>
+        </a>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+      <a href="/seafood-near-me">
+              
+        <div class="card_image"><img src="{{ asset('user/front_end/images/food_near_me/seafood-near-me.png')}}"></div>
+        <div class="card_content">
+          <h2 class="card_title">Seafood Near Me</h2>
+          
+        </div>
+        </a>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+      <a href="/mexican-near-me">
+            
+        <div class="card_image"><img src="{{ asset('user/front_end/images/food_near_me/mexican-near-me.png')}}"></div>
+        <div class="card_content">
+          <h2 class="card_title">Mexican Near Me</h2>
+          
+        </div>
+</a>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<!-- <div class="menu-price food-cl-list">
+    <ul class="h-hours " style="width:70%">
         <li>
             <a href="/donuts-near-me">
                 <span>
@@ -211,5 +281,5 @@
             </a>
         </li>
     </ul>
-</div>
+</div> -->
 
