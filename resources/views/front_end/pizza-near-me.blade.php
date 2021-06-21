@@ -7,8 +7,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,viewport-fit=cover" />
 <link rel="alternate" href="#" hreflang="en-us" />
-<title>Pizza Near Me</title>
-<link href="{{ asset('user/front_end/images/favicon.ico')}}" rel="shortcut icon">
+<title>Pizza Near Me - Menu With Price</title>
+<link href="{{ asset('user/front_end/images/Menu (2).png')}}" rel="shortcut icon">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72×72-precomposed.png">
 <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114×114-precomposed.png">
@@ -21,8 +21,8 @@
 <link rel="manifest" href="{{ asset('user/front_end/js/manifest.json')}}">
 <link rel="canonical" href="#" />
 
-<meta name="description" content="Best Restaurants Open Now Near Me [Find NearBy Best Restaurants in all Cuisine. Also Check Menus, Nutrition Value of Particular Restaurants in United States" />
-<meta name="keywords" content="Restaurants Near Me, Restaurants Locations Near Me, All Restaurant's Near Me,  Best Restaurants Open Now Near Me, Lunch Near Me, Dinner Near Me" /> 
+<meta name="description" content="All menus and locations of best Pizza restaurants including Little Caesars Pizza, Papa John's Pizza, Marco's Pizza, and so on." />
+<meta name="keywords" content="Pizza near me, take away, deep dish, toppings, pizzeria, LOMBARDI’S, frozen pizza, pizza rolls" />
 </head>
 <body id="index-body">
   
@@ -35,7 +35,7 @@
             <label class="search-body-label" for="search-btn"></label>
            
             <a class="logo" href="/">
-                <img src="{{ asset('user/front_end/images/logo.png')}}"
+                <img src="{{ asset('user/front_end/images/Menu (2).png')}}"
                     alt="Menu With Price">
             </a>
            
@@ -43,7 +43,7 @@
     <div class="menu" style="background-color: gray;">
         <div class="menu_width">
             <a class="logo" href="/">
-                <img src="{{ asset('user/front_end/images/logo.png')}}" alt="Menu With Price">
+                <img src="{{ asset('user/front_end/images/Menu (2).png')}}" alt="Menu With Price">
             </a>
             <ul class="m-list">
                 <li class="ml-home">
@@ -77,7 +77,7 @@
 </div>
 
 
-<div class="content "  style="width:70%">
+<div class="content "  >
     <div class="main">
         <div class="bread-crumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
             <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">

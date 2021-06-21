@@ -4,7 +4,7 @@
 <a href="/about">About Us |</a>
 <a href="/contact">Contact Us |</a>
 <a href="/privacy">Privacy Policy |</a>
-<a href="/term">Terms of Use</a> <p>&#169; 2021 Website. </p>
+<a href="/term">Terms of Use  | </a><a href="/Disclaimer">Disclaimer</a> <p>&#169; 2021 Website. </p>
 </div>
 </div>
 

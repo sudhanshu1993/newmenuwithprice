@@ -1,4 +1,20 @@
 @extends('layouts.main')
+@foreach($city as $key => $value)
+    @if($loop->iteration=='3')
+	<?php $name= Str::remove('Prices', $value) ?>
+    @endif
+	@endforeach
+    @foreach($city as $key => $value)
+    @if($loop->iteration=='5')
+ 	<?php $s1= $value; ?>
+    @endif
+	@endforeach
+    @foreach ($titles as $key => $value)
+    <?php  $num=substr($value,-8);
+
+    ?> 
+                            @endforeach
+    
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -7,8 +23,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,viewport-fit=cover" />
 <link rel="alternate" href="#" hreflang="en-us" />
-<title>KFC Prices in Albertville [Open & Closed Hours], AL 35950</title>
-<link href="{{ asset('user/front_end/images/favicon.ico')}}" rel="shortcut icon">
+<title>{{$name}} Prices in {{$s1}} [Open & Closed Hours],  {{$num}}</title>
+<link href="{{ asset('user/front_end/images/Menu (2).png')}}" rel="shortcut icon">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72×72-precomposed.png">
 <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114×114-precomposed.png">
@@ -21,8 +37,8 @@
 <link rel="manifest" href="{{ asset('user/front_end/js/manifest.json')}}">
 <link rel="canonical" href="#" />
 
-<meta name="description" content="Check KFC Hours Albertville, KFC Open hours Albertville AL 35950, KFC Closing hours Albertville, KFC Holiday hours Albertville, KFC Prices Albertville AL 35950" />
-<meta name="keywords" content="KFC Hours Albertville, KFC Open hours Albertville, KFC Closing hours Albertville, KFC Holiday hours Albertville, KFC Prices Albertville AL 35950" /> 
+<meta name="description" content="Check {{$name}} Hours {{$s1}}, {{$name}} Open hours {{$s1}} AL  {{$num}}, {{$name}} Closing hours {{$s1}},{{$name}} Holiday hours {{$s1}}, {{$name}} Prices {{$s1}}  AL {{$num}}" />
+<meta name="keywords" content="{{$name}} Hours {{$s1}}, {{$name}} Open hours {{$s1}}, {{$name}} Closing hours {{$s1}}, {{$name}} Holiday hours {{$s1}}, {{$name}} Prices {{$s1}} AL {{$num}}" /> 
 </head>
 <body id="index-body">
   
@@ -35,7 +51,7 @@
             <label class="search-body-label" for="search-btn"></label>
            
             <a class="logo" href="/">
-                <img src="{{ asset('user/front_end/images/logo.png')}}"
+                <img src="{{ asset('user/front_end/images/Menu (2).png')}}"
                     alt="Menu With Price">
             </a>
            
@@ -43,7 +59,7 @@
     <div class="menu" style="background-color: gray;">
         <div class="menu_width">
             <a class="logo" href="/">
-                <img src="{{ asset('user/front_end/images/logo.png')}}" alt="Menu With Price">
+                <img src="{{ asset('user/front_end/images/Menu (2).png')}}" alt="Menu With Price">
             </a>
             <ul class="m-list">
                 <li class="ml-home">
@@ -77,7 +93,7 @@
 </div>
     
 
-<div class="content" style="width:70%"> 
+<div class="content" > 
     <div class="main">
     
     <div class="bread-crumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
@@ -94,12 +110,12 @@
     </div>
     
     <h1 style="color:blue;"><span style="color:blue;">@foreach ($titles as $key => $value)
-    <?php  $num=substr($value,-5);
+    <?php  $num=substr($value,-8);
 
     ?>
                                 {!! $value !!}
                             @endforeach
-</span> Prices in Birmingham, AL 35235</h1>
+</span> Prices in {{$s1}},  {{$num}}</h1>
     
     
     
@@ -141,7 +157,7 @@
  	<?php $s1= $value; ?>
     @endif
 	@endforeach
-    <?php $text1='<h2>'.$s.'Menu with Prices in '.$s1.', AL '. $num.'</h2>'; 
+    <?php $text1='<h2>'.$s.'Menu with Prices in '.$s1.',  '. $num.'</h2>'; 
     ?>
     @foreach ($datam12 as $key => $value)
                                 {!! str_replace('<h2>Restaurant Menu</h2>', $text1, $value) !!}

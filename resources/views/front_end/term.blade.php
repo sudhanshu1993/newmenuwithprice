@@ -7,8 +7,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,viewport-fit=cover" />
 <link rel="alternate" href="#" hreflang="en-us" />
-<title>Best Restaurants Near Me Open Now and Locations</title>
-<link href="{{ asset('user/front_end/images/favicon.ico')}}" rel="shortcut icon">
+<title>Term of Use - Menu With Price</title>
+<link href="{{ asset('user/front_end/images/Menu (2).png')}}" rel="shortcut icon">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72×72-precomposed.png">
 <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114×114-precomposed.png">
@@ -35,7 +35,7 @@
             <label class="search-body-label" for="search-btn"></label>
            
             <a class="logo" href="/">
-                <img src="{{ asset('user/front_end/images/logo.png')}}"
+                <img src="{{ asset('user/front_end/images/Menu (2).png')}}"
                     alt="Menu With Price">
             </a>
            
@@ -43,7 +43,7 @@
     <div class="menu" style="background-color: gray;">
         <div class="menu_width">
             <a class="logo" href="/">
-                <img src="{{ asset('user/front_end/images/logo.png')}}" alt="Menu With Price">
+                <img src="{{ asset('user/front_end/images/Menu (2).png')}}" alt="Menu With Price">
             </a>
             <ul class="m-list">
                 <li class="ml-home">
@@ -77,7 +77,7 @@
 </div>
 
 
-<div class="content "  style="width:70%">
+<div class="content ">
 <div class="main">
     <div class="bread-crumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
         <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
@@ -92,8 +92,31 @@
     <h1>Terms of Use</h1>
     <div class="about">
         <p>
-            Welcome to xyz.com. To better browse this website, you must read carefully all the flowing items and should accept and agree to be bound by the terms and provisions of the agreement. Or any issues caused by disobeying them, we are not in charge of it. One thing needs to be explicitly mentioned here is that in the terms ‘The Company’ or ‘us’ or ‘we’ or 'our' refers to our company – xyz.com, the owner of the website. The term ‘you' and 'your' refers to the user or viewer of our website who accept the Company's terms and conditions.</p><br><p>1. Our site and its components are offered for informational purposes only. We shall not guarantee the accuracy, usefulness or availability of any information provided on our website or any third parties and we are also not liable for any errors or omissions in that information. Any harms caused by using or downloading the information users should be responsible for that.</p><br><p>2. Users are not qualified to any modifications of the terms conditions and notices here. All the services should be used only for lawful use by individuals or organizations with the legal capacity and authority.</p><br><p>3. The content on the website is licensed to us, including but not limited to, the design, layout, look, appearances and graphics. All these intellectual property is protected, and any infringement through reproduction or redistribution will be severely dealt with according to law.</p><br><p>4. All trademarks or logos cited and used under “the Brands” are not affiliated with our website and also not our property. They are the sole property of their respective owners.</p><br><p>5. We are committed to protecting users’ privacy, and not to selling, sharing, or renting the personal information to any third party or for other unauthorized purposes. Our company usually does not collect personal information. Any users’ record by searching the site is regarded as confidential and will not be divulged to any third party, other than if legally required to do so to the appropriate authorities.</p><br><p>6. We are not responsible for the protection of users’ privacy on condition that users reveal personal information to the links on our website. The links on this site intend to offer other details to users. All the content on those linked sites is not related to our company.</p><br><p>7. We reserve the right to change or modify these conditions and items from time to time and the right to explain any changes in our services. Any changes will be announced in time.</p><br><p>Further information on our website, specific brand or a mall, you can write to us, or contact the merchant directly. We make every effort to provide better services for all the users.
+        Please read these Terms and Conditions carefully before using the domain.com website operated by domain.com.</p>
+        <p>Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.</p>
+        <p>By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service.
         </p>
     </div>
+    <h1>Links To Other Web Sites</h1>
+    <div class="about">
+    <p>Our Service may contain links to third-party web sites or services that are not owned or controlled by domain.com.</p>
+    <p>domain.com has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that domain.com shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.</p>
+    <p>We strongly advise you to read the terms and conditions and privacy policies of any third-party web sites or services that you visit.</p>
+    </div>
+    <h1>Governing Law</h1>
+    <div  class="about">
+    <p>These Terms shall be governed and construed in accordance with the laws of Uttar Pradesh, India, without regard to its conflict of law provisions.</p>
+    <p>Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service, and supersede and replace any prior agreements we might have between us regarding the Service.</p>
+    </div>
+    <h1>Changes</h1>
+    <div  class="about">
+    <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 15 days notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.</p>
+    <p>By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service.</p>
+    </div>
+    <h1>Contact Us</h1>
+    <p>If you have any questions about these Terms, please contact us.
+    <a href="mailto:ayush@uproi.in">	By email: ayush@uproi.in</a>
+    </p>
+
 </div>
 </div>

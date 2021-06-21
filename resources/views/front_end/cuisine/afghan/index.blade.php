@@ -1,4 +1,15 @@
 @extends('layouts.main')
+@foreach($city as $key => $value)
+    
+    @if($loop->iteration=='3')
+	
+        
+        <?php $name=$value ?>
+        
+    
+    @endif
+	
+	@endforeach
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -7,8 +18,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,viewport-fit=cover" />
 <link rel="alternate" href="#" hreflang="en-us" />
-<title>Afghan Restaurants Near me Locations in United States (US)</title>
-<link href="{{ asset('user/front_end/images/favicon.ico')}}" rel="shortcut icon">
+<title>{{ $name}} Restaurants Near me Locations in United States (US)</title>
+<link href="{{ asset('user/front_end/images/Menu (2).png')}}" rel="shortcut icon">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72×72-precomposed.png">
 <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114×114-precomposed.png">
@@ -21,8 +32,8 @@
 <link rel="manifest" href="{{ asset('user/front_end/js/manifest.json')}}">
 <link rel="canonical" href="#" />
 
-<meta name="description" content="Find Best 20+ Afghan places Near me. Best Afghan cuisine Near by. List of all Afghan Restaurants Near Me in United States which includes Delivery as well. " />
-<meta name="keywords" content="afghan places near me, afghan cuisine near me, Afghan Restaurants Near Me, Afghan Delivery Near Me, Afghan Restaurants locations in US" /> 
+<meta name="description" content="Find Best 20+ {{$name}} places Near me. Best {{$name}} cuisine Near by. List of all {{$name}} Restaurants Near Me in United States which includes Delivery as well. " />
+<meta name="keywords" content="{{$name}} places near me, {{$name}} cuisine near me, {{ $name}} Restaurants Near Me, {{ $name}} Delivery Near Me, {{$name}} Restaurants locations in US" /> 
 </head>
 <body id="index-body">
   
@@ -35,7 +46,7 @@
             <label class="search-body-label" for="search-btn"></label>
            
             <a class="logo" href="/">
-                <img src="{{ asset('user/front_end/images/logo.png')}}"
+                <img src="{{ asset('user/front_end/images/Menu (2).png')}}"
                     alt="Menu With Price">
             </a>
            
@@ -43,7 +54,7 @@
     <div class="menu" style="background-color: gray;">
         <div class="menu_width">
             <a class="logo" href="/">
-                <img src="{{ asset('user/front_end/images/logo.png')}}" alt="Menu With Price">
+                <img src="{{ asset('user/front_end/images/Menu (2).png')}}" alt="Menu With Price">
             </a>
             <ul class="m-list">
                 <li class="ml-home">
@@ -78,7 +89,7 @@
 
 
     
-<div class="content" style="width:70%">
+<div class="content" >
     <div class="main">
     
     <div class="bread-crumbs" itemscope itemtype="http://schema.org/BreadcrumbList">

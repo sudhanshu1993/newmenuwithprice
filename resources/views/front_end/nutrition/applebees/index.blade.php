@@ -1,4 +1,9 @@
 @extends('layouts.main')
+@foreach($b as $key => $value) 
+                @if($loop->last)
+    <?php $name= Str::remove('Nutrition', $value) ?>
+	            @endif
+                @endforeach
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -8,8 +13,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,viewport-fit=cover" />
 <link rel="alternate" href="#" hreflang="en-us" />
-<title>Pizza Hut Nutrition Facts| Pizza Hut Menu Calories Calculator</title>
-<link href="{{ asset('user/front_end/images/favicon.ico')}}" rel="shortcut icon">
+<title>{{ $name }} Nutrition Fact | {{ $name }} Menu Calories Calculator</title>
+<link href="{{ asset('user/front_end/images/Menu (2).png')}}" rel="shortcut icon">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72×72-precomposed.png">
 <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114×114-precomposed.png">
@@ -22,8 +27,8 @@
 <link rel="manifest" href="{{ asset('user/front_end/js/manifest.json')}}">
 <link rel="canonical" href="#" />
 
-<meta name="description" content="Find Out Pizza Hut Nutrition Facts which includes Fat, Protein, Carbs, Sugars, Calories Calculator. How Many Calories 1 Slice of Pizza Hut Nutrition Value." />
-<meta name="keywords" content="Pizza Hut Nutrition Facts, Pizza Hut Nutrition Calculator, Pizza Hut Menu Nutrition, Pizza Hut Nutrition Value, Pizza Hut Calories" /> 
+<meta name="description" content="Find Out  {{ $name}} Nutrition Facts which includes Fat, Protein, Carbs, Sugars, Calories Calculator. How Many Calories 1 Slice of {{$name}} Nutrition Value" />
+<meta name="keywords" content="{{ $name }} Nutrition Facts , {{$name}} Nutrition Calculator , {{$name}}  Menu Nutrition, {{$name}}Nutrition Value , {{$name}} Calories" /> 
 </head>
 <body id="index-body">
   
@@ -36,7 +41,7 @@
             <label class="search-body-label" for="search-btn"></label>
            
             <a class="logo" href="/">
-                <img src="{{ asset('user/front_end/images/logo.png')}}"
+                <img src="{{ asset('user/front_end/images/Menu (2).png')}}"
                     alt="Menu With Price">
             </a>
            
@@ -44,7 +49,7 @@
     <div class="menu" style="background-color: gray;">
         <div class="menu_width">
             <a class="logo" href="/">
-                <img src="{{ asset('user/front_end/images/logo.png')}}" alt="Menu With Price">
+                <img src="{{ asset('user/front_end/images/Menu (2).png')}}" alt="Menu With Price">
             </a>
             <ul class="m-list">
                 <li class="ml-home">
@@ -77,7 +82,7 @@
     </div>
 </div>
 
-    <div class="content container" style="width:70%">
+    <div class="content " >
         <div class="main">
 
             <div class="bread-crumbs" itemscope itemtype="http://schema.org/BreadcrumbList">

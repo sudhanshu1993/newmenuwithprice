@@ -1,4 +1,18 @@
 @extends('layouts.main')
+@foreach($city as $key => $value)
+    @if($loop->iteration=='3')
+    <?php $name= Str::remove('Prices', $value) ?>
+    
+    @endif
+	@endforeach
+    @foreach($city as $key => $value)
+    @if($loop->last)
+	<?php $name1= Str::remove('Prices', $value) ?>
+    @endif
+
+	@endforeach
+    
+    
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -7,8 +21,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,viewport-fit=cover" />
 <link rel="alternate" href="#" hreflang="en-us" />
-<title>KFC Locations in Alabama </title>
-<link href="{{ asset('user/front_end/images/favicon.ico')}}" rel="shortcut icon">
+<title>{{$name}} Locations in {{$name1}} </title>
+<link href="{{ asset('user/front_end/images/Menu (2).png')}}" rel="shortcut icon">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72×72-precomposed.png">
 <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114×114-precomposed.png">
@@ -21,8 +35,8 @@
 <link rel="manifest" href="{{ asset('user/front_end/js/manifest.json')}}">
 <link rel="canonical" href="#" />
 
-<meta name="description" content="Find out KFC Near me Alabama, Track your KFC locations in Alabama. Nearest KFC Store in Alabama along with KFC menu Alabama." />
-<meta name="keywords" content="KFC Near me Alabama, KFC locations in alabama, KFC Alabama, KFC menu Alabama, KFC Store Alabama" /> 
+<meta name="description" content="Find out {{$name}} Near me Alabama, Track your {{$name}} locations in Alabama. Nearest {{$name}} Store in Alabama along with {{$name}} menu Alabama." />
+<meta name="keywords" content="{{$name}} Near me Alabama, {{$name}} locations in alabama, {{$name}} Alabama, {{$name}} menu Alabama, {{$name}} Store Alabama" /> 
 </head>
 <body id="index-body">
   
@@ -35,7 +49,7 @@
             <label class="search-body-label" for="search-btn"></label>
            
             <a class="logo" href="/">
-                <img src="{{ asset('user/front_end/images/logo.png')}}"
+                <img src="{{ asset('user/front_end/images/Menu (2).png')}}"
                     alt="Menu With Price">
             </a>
            
@@ -43,7 +57,7 @@
     <div class="menu" style="background-color: gray;">
         <div class="menu_width">
             <a class="logo" href="/">
-                <img src="{{ asset('user/front_end/images/logo.png')}}" alt="Menu With Price">
+                <img src="{{ asset('user/front_end/images/Menu (2).png')}}" alt="Menu With Price">
             </a>
             <ul class="m-list">
                 <li class="ml-home">
@@ -77,7 +91,7 @@
 </div>
     
 
-<div class="content" style="width:70%">
+<div class="content" >
     <div class="main main1">
     
     <div class="bread-crumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
@@ -99,11 +113,25 @@
     @if($loop->iteration=='3')
 	{{  Str::remove('Prices', $value)}}
     @endif
-	@endforeach Menu with Prices in Alabama</h1>
+	@endforeach Menu with Prices in 
+    @foreach($city as $key => $value)
+    @if($loop->last)
+	{{  Str::remove('Prices', $value)}}
+    @endif
+
+	@endforeach
+    
+    </h1>
     </div>
     
     <div class="state">
-    <h2 style="color:blue;">Select Your City in Alabama For 
+    <h2 style="color:blue;">Select Your City in @foreach($city as $key => $value)
+    @if($loop->last)
+	{{  Str::remove('Prices', $value)}}
+    @endif
+
+	@endforeach
+     For 
     @foreach($city as $key => $value)
     @if($loop->iteration=='3')
 	{{  Str::remove('Prices', $value)}}

@@ -1,5 +1,4 @@
 @extends('layouts.main')
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -8,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,viewport-fit=cover" />
 <link rel="alternate" href="#" hreflang="en-us" />
-<title>Contact Us - Menu With Price</title>
+<title>Disclaimer - Menu With Price</title>
 <link href="{{ asset('user/front_end/images/Menu (2).png')}}" rel="shortcut icon">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72×72-precomposed.png">
@@ -78,8 +77,8 @@
 </div>
 
 
-    
-<div class="content "  >
+     
+<div class="content ">
     <div class="main">
         <div class="bread-crumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
             <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
@@ -87,74 +86,28 @@
                     <meta itemprop="position" content="1">
             </span>
             <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
-                <a href="/contact" itemprop="item"><i itemprop="name">Contact Us</i></a>
+                <a href="/about" itemprop="item"><i itemprop="name">Disclaimer</i></a>
                 <meta itemprop="position" content="2">
             </span> 
         </div>
-        <h1 style="color: blue;">Contact Us</h1>
-            <div class="about">
-                <p>
-                    If you have any questions or advises about our website, please contact us at <a href="#" class="__cf_email__" data-cfemail="65161015150a17112508000b10120c110d15170c06004b060a084b">[email&#160;protected]</a> We appreciate your valuable voice.</p><br><p>Your email will be promptly replied, and your questions will be addressed in time.</p><br><p>Please note:</p><br><p>The trademarks or logos displayed on the website is not affiliated with us. They are the sole property of their respective merchants. Any questions about the logo as well as trademarks, please contact the merchant directly.
-                </p>
-                <h4>
-                    How to Unsubscribe from Menu with Price
-                </h4>
-                <p>
-                    We are sorry to see you go but happy to help you for one last time.
-                </p>
-                <h5>
-                    For Google Chrome on Android Users:
-                </h5>
-                <ol>
-                    <li>
-                        On your Android phone or tablet, open Chrome.
-                    </li>
-                    <li>
-                        Go to any webpage of Menu with Price, e.g. 
-                            <a href="/">
-                                xyz.com
-                            </a>.
-                    </li>
-                    <li>
-                        Left to the URL, click the lock (icon).
-                    </li>
-                    <li>
-                        Click <b>Site settings</b>.
-                    </li>
-                    <li>
-                        Click <b>Notifications</b>.
-                    </li>
-                    <li>
-                        Unselect <b>Show notifications</b>.
-                    </li>
-                </ol>
-                <h5>For Google Chrome on PC Users:</h5>
-                <ol>
-                    <li>
-                        On your laptop, open Chrome.
-                    </li>
-                    <li>
-                        Go to any webpage of Menu with Price, e.g. 
-                            <a href="/">
-                                xyz.com
-                            </a>.
-                    </li>
-                    <li>
-                        Left to the URL, click the lock (icon).
-                    </li>
-                    <li>
-                        Right to 
-                            <b>
-                                Notifications
-                            </b>, change 
-                            <b>
-                                Allow
-                            </b> to 
-                            <b>
-                                Block
-                            </b>.
-                    </li> 
-                </ol>
-            </div>
+        <h1 style="color: blue;">Disclaimer</h1>
+        <div class="about">
+            <p>
+            If you require any more information or have any questions about our site’s disclaimer, please feel free to contact us by email at ayush@uproi.inIf you require any more information or have any questions about our site’s disclaimer, please feel free to contact us by email at <a href="mailto:ayush@uproi.in">ayush@uproi.in</a></p>
+        </div>
+        <h1>Disclaimers for https://printablecalendarfree.com/</h1>
+        <div class="about">
+            <p>All the information on this website is published in good faith and for general information purpose only. https://printablecalendarfree.com/ does not make any warranties about the completeness, reliability and accuracy of this information. Any action you take upon the information you find on this website (https://printablecalendarfree.com/), is strictly at your own risk. PrintableCalendar.me will not be liable for any losses and/or damages in connection with the use of our website.</p>
+            <p>From our website, you can visit other websites by following hyperlinks to such external sites. While we strive to provide only quality links to useful and ethical websites, we have no control over the content and nature of these sites. These links to other websites do not imply a recommendation for all the content found on these sites. Site owners and content may change without notice and may occur before we have the opportunity to remove a link which may have gone ‘bad’.</p>
+            <p>Please be also aware that when you leave our website, other sites may have different privacy policies and terms which are beyond our control. Please be sure to check the Privacy Policies of these sites as well as their “Terms of Service” before engaging in any business or uploading any information.</p>
+        </div>
+        <h1>Consent</h1>
+        <div class="about">
+        <p>By using our website, you hereby consent to our disclaimer and agree to its terms.</p>
+        </div>
+        <h1>Update</h1>
+        <div class="about">
+            <p>This site disclaimer was last updated on: Friday August 28, 2021. Should we update, amend or make any changes to this document, those changes will be prominently posted here.</p>
+        </div>
     </div>
 </div>

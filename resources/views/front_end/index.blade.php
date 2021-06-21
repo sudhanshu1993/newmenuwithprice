@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,viewport-fit=cover" />
 <link rel="alternate" href="#" hreflang="en-us" />
 <title>Menu With Price</title>
-<link href="{{ asset('user/front_end/images/favicon.ico')}}" rel="shortcut icon">
+<link href="{{ asset('user/front_end/images/Menu (2).png')}}" rel="shortcut icon">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72×72-precomposed.png">
 <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114×114-precomposed.png">
@@ -34,7 +34,7 @@
             <label class="search-body-label" for="search-btn"></label>
            
             <a class="logo" href="/">
-                <img src="{{ asset('user/front_end/images/logo.png')}}"
+                <img src="{{ asset('user/front_end/images/Menu (2).png')}}"
                     alt="Menu With Price">
             </a>
            
@@ -42,7 +42,7 @@
     <div class="menu" style="background-color: gray;">
         <div class="menu_width">
             <a class="logo" href="/">
-                <img src="{{ asset('user/front_end/images/logo.png')}}" alt="Menu With Price">
+                <img src="{{ asset('user/front_end/images/Menu (2).png')}}" alt="Menu With Price">
             </a>
             <ul class="m-list">
                 <li class="ml-home">
@@ -80,12 +80,12 @@
     <div class="slide container" style="width:70%"> 
         <ul class="s-list">
             <li class="s-list-pic1">
-                <a href="#">
+                <a href="{{ asset('user/front_end/images/banner-cov.png')}}">
                     <img src="{{ asset('user/front_end/images/banner-cov.png')}}" alt="Seriously, Refrigerating These 12 Foods Will Do Harm To Your Health">
                 </a>
             </li>
             <li class="s-list-pic2">
-                <a href="#">
+                <a href="{{ asset('user/front_end/images/slider1.jpg')}}">
                     <img src="{{ asset('user/front_end/images/slider1.jpg')}}" alt="Can I Use Expired Spices?">
                         <span>
                             Can I Use Expired Spices?
@@ -93,7 +93,7 @@
                 </a>
             </li>
             <li class="s-list-pic3">
-                <a href="#">
+                <a href="{{ asset('user/front_end/images/slider2.jpg')}}">
                     <img src="{{ asset('user/front_end/images/slider2.jpg')}}" alt="Why You Should Eat More Cranberries and Easy Recipes">
                         <span>
                             Why You Should Eat More Cranberries and Easy Recipes
@@ -101,7 +101,7 @@
                 </a>
             </li>
             <li class="s-list-pic4">
-                <a href="#">
+                <a href="{{ asset('user/front_end/images/slider3.jpg')}}">
                     <img src="{{ asset('user/front_end/images/slider3.jpg')}}" alt="Reasons to Indulge in Dark Chocolate">
                         <span>
                             Reasons to Indulge in Dark Chocolate

@@ -1,5 +1,13 @@
 
 @extends('layouts.main')
+@foreach($city as $key => $value)
+                @if($loop->last)
+                    <?php 
+                     
+                    $name=$value
+                    ?>
+	            @endif
+	        @endforeach
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -8,8 +16,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,viewport-fit=cover" />
 <link rel="alternate" href="#" hreflang="en-us" />
-<title>KFC Menu Prices | KFC Menu with Prices [Meals)</title>
-<link href="{{ asset('user/front_end/images/favicon.ico')}}" rel="shortcut icon">
+<title>{{$name}}  Prices | {{$name}} with Prices [Meals)</title>
+<link href="{{ asset('user/front_end/images/Menu (2).png')}}" rel="shortcut icon">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72×72-precomposed.png">
 <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114×114-precomposed.png">
@@ -22,8 +30,8 @@
 <link rel="manifest" href="{{ asset('user/front_end/js/manifest.json')}}">
 <link rel="canonical" href="#" />
 
-<meta name="description" content="Check KFC Menu Prices with KFC. menu Meals. Also, Check KFC Menu deals along with KFC menu with Prices PDF Format & KFC Menu Near Me Location." />
-<meta name="keywords" content="KFC menu Meals, kfc menu pdf, KFC menu near me, kfc menu deals, kfc menu with prices, kfc menu and prices, kfc menu, kfc menu prices" /> 
+<meta name="description" content="Check {{$name}} Prices with {{$name}} Meals. Also, Check {{$name}} deals along with {{$name}} with Prices PDF Format & {{$name}} Near Me Location." />
+<meta name="keywords" content="{{$name}} Meals, {{$name}} pdf, {{$name}} near me, {{$name}} deals, {{$name}} with prices, {{$name}} and prices, {{$name}}, {{$name}} prices" /> 
 </head>
 <body id="index-body">
   
@@ -36,7 +44,7 @@
             <label class="search-body-label" for="search-btn"></label>
            
             <a class="logo" href="/">
-                <img src="{{ asset('user/front_end/images/logo.png')}}"
+                <img src="{{ asset('user/front_end/images/Menu (2).png')}}"
                     alt="Menu With Price">
             </a>
            
@@ -44,7 +52,7 @@
     <div class="menu" style="background-color: gray;">
         <div class="menu_width">
             <a class="logo" href="/">
-                <img src="{{ asset('user/front_end/images/logo.png')}}" alt="Menu With Price">
+                <img src="{{ asset('user/front_end/images/Menu (2).png')}}" alt="Menu With Price">
             </a>
             <ul class="m-list">
                 <li class="ml-home">
@@ -76,7 +84,7 @@
         </div>
     </div>
 </div>
-<div class="content" style="width:70%;">
+<div class="content" >
     <div class="main  tab-main">
         <div class="bread-crumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
             @foreach ($city as $key => $value)

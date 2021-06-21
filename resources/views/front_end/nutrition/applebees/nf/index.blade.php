@@ -1,4 +1,11 @@
 @extends('layouts.main')
+@foreach($b as $key => $value) 
+                @if($loop->last)
+                <?php $name= Str::remove('Nutrition Facts', $value) ?>
+	
+	            @endif
+                @endforeach
+
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -8,8 +15,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,viewport-fit=cover" />
 <link rel="alternate" href="#" hreflang="en-us" />
-<title>Add American Cheese Nutrition Facts & Calories Calculator</title>
-<link href="{{ asset('user/front_end/images/favicon.ico')}}" rel="shortcut icon">
+<title>{{ $name }} Nutrition Facts & Calories Calculator</title>
+<link href="{{ asset('user/front_end/images/Menu (2).png')}}" rel="shortcut icon">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72×72-precomposed.png">
 <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114×114-precomposed.png">
@@ -22,8 +29,8 @@
 <link rel="manifest" href="{{ asset('user/front_end/js/manifest.json')}}">
 <link rel="canonical" href="#" />
 
-<meta name="description" content="Check Add American Cheese Nutrition Facts which includes Add American Cheese Fat, Protein, Carbs, Calories. How Many Calories 1 Slice of Add American Cheese" />
-<meta name="keywords" content="Add American Cheese Nutrition Facts,  Add American Cheese Calories, Add American Cheese Nutrition Value, Add American Cheese Carbs Fat value" /> 
+<meta name="description" content="Check {{ $name}} Nutrition Facts which includes {{ $name}}  Fat, Protein, Carbs, Calories. How Many Calories 1 Slice of {{ $name}}" />
+<meta name="keywords" content="{{ $name }} Nutrition Facts  , {{$name}} Calories , {{$name}} Nutrition Value ,  {{$name}}  Carbs Fat Value" /> 
 </head>
 <body id="index-body">
   
@@ -36,7 +43,7 @@
             <label class="search-body-label" for="search-btn"></label>
            
             <a class="logo" href="/">
-                <img src="{{ asset('user/front_end/images/logo.png')}}"
+                <img src="{{ asset('user/front_end/images/Menu (2).png')}}"
                     alt="Menu With Price">
             </a>
            
@@ -44,7 +51,7 @@
     <div class="menu" style="background-color: gray;">
         <div class="menu_width">
             <a class="logo" href="/">
-                <img src="{{ asset('user/front_end/images/logo.png')}}" alt="Menu With Price">
+                <img src="{{ asset('user/front_end/images/Menu (2).png')}}" alt="Menu With Price">
             </a>
             <ul class="m-list">
                 <li class="ml-home">
@@ -77,7 +84,7 @@
     </div>
 </div>
 
-    <div class="content container" style="width:70%">
+    <div class="content " >
         <div class="main">
 
             <div class="bread-crumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
@@ -154,7 +161,7 @@
             <ul class="menu-list state_list_food">
 				@foreach($datam as $key => $value)
 				<li><a href="{{
-					Str::after($key,'https://www.menuwithprice.com') }}" style="border:1px solid blue;text-align: center;font-size:18px;font-family:Arial, Helvetica, sans-serif;">{{ $value }}</a></li>
+					Str::after($key,'https://www.menuwithprice.com') }}" style="text-align: justify;font-size:16px;font-family:Arial, Helvetica, sans-serif;">{{ $value }}</a></li>
 				@endforeach
 				{{--
                 <li><a href="https://www.menuwithprice.com/nutrition/applebees/2953/"
